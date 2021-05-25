@@ -13,7 +13,6 @@ import com.reza.capstonecap0488.databinding.FragmentMonitoringBinding
 
 class MonitoringFragment : Fragment() {
 
-    private lateinit var monitoringViewModel: MonitoringViewModel
     private lateinit var binding:FragmentMonitoringBinding
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -25,14 +24,4 @@ class MonitoringFragment : Fragment() {
         return binding.root
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-
-
-
-
-
-
-    }
 }
