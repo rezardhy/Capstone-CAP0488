@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Capstone CAP0488</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_monitoring">Monitoring</string>
+    <string name="nama_tanaman"><u>Daun Tomat</u></string>
+    <string name="penyakit">Bercak Kering Alternaria (Early Blight) </string>
+    <string name="penjelasan_penyakit">Sesuai dengan namanya, serangan penyakit yang satu ini ditandai dengan bercak kecoklatan berbentuk bulat pada bagian daun tanaman. Biasanya yang pertama kali terjangkit adalah pada kanopi paling bawah. Nantinya bercak tersebut terus melebar hingga keseluruhan daun menjadi coklat dan mati. Buka hanya bagian daun, penyakit ini juga akan menyerang batang dan buah tomat.  Penyakit bercak kering disebabkan oleh jamur Alternaria tomatophila dan A. solani. Tanaman tomat yang dibudidayakan di dalam greenhouse sangat rentan terserang oleh penyakit ini. Selain itu, ketika jarak tanam yang digunakan tidak ideal atau terlalu berdempetan, serta cabang yang tumbuh tidak diatur, maka sirkulasi udara yang buruk dapat menambah tinggi presentase munculnya penyakit jamur Alternaria.</string>
+    <string name="solusi_penyakit">Solusi penanganan untuk penyakit yang disebabkan oleh cendawan ini pertama-tama adalah mencabut dan memusnahkan tanaman tomat yang terserang. Sedangkan untuk pencegahan bisa dilakukan dengan cara menggunakan benih yang resistan dan bersertifikat. Kemudian jaga supaya sirkulasi udara di lahan tetap terjaga dengan cara membersihkan lahan dari gulma, lakukan juga pemangkasan pada cabang air yang terlalu rimbun.  Bagi yang membudidayakan tanaman tomat secara organik, tersedia pula pilihan pengendalian jamur Alternanaria menggunakan biofungisida yang mengandung bakteri Bacillus subtilis dan Pseudomonas fluorescens. Atau bisa juga dengan aplikasi fungisida berbahan aktif Tembaga hidroksida (Copper hydroxide).</string>
+    <string name="isi_article">Memiliki warna merah merona yang menarik, tomat banyak dimanfaatkan sebagai garnish atau penghias makanan. Rasanya yang masam juga membuat tomat sering dijadikan sebagai pemberi rasa tambahan pada beragam jenis makanan. Hal tersebut membuat tomat mudah ditemukan di pasaran dan tak jarang dikonsumsi oleh masyarakat.
+
+Selain itu, tomat juga memiliki beberapa jenis yang biasa dijadikan makanan. Meski kebanyakan tomat perlu dimasak terlebih dahulu sebelum dimakan, ada pula jenis yang bisa langsung dikonsumsi mentah-mentah. Sebagai contoh adalah tomat apel yang memiliki rasa manis dan mengandung banyak air.
+
+Ada pula jenis tomat sayur yang menjadi jenis tomat yang paling banyak dijual di pasaran dan dijadikan sebagai bahan tambahan pada masakan. Tidak hanya yang berwarna merah, tomat hijau juga cukup populer di beberapa belahan dunia. Bagi para pecinta salad, pasti tidak asing dengan tomat cherry yang berukuran kecil.
+
+Nah, mengetahui banyaknya jenis tomat dan bagaimana cara masyarakat mengonsumsinya, tahukah Anda jika buah tersebut juga menyimpan banyak manfaat kesehatan di dalamnya? Beberapa di antaranya bahkan mampu menyehatkan organ vital manusia dan mencegah penyakit kronis. Agar tidak sekadar menjadi campuran makanan saja, inilah manfaat-manfaat tomat bagi kesehatan yang wajib diketahui. Antioksidan adalah satu di antara banyak kandungan nutrisi utama yang dimiliki oleh tomat. Beragam variasi molekul antioksidan yang terkandung meliputi likopen, asam klorogenat, dan juga beta karoten.
+
+Seperti yang sudah umum dipahami, antioksidan berperan penting dalam tubuh untuk menangkal radikal bebas. Antioksidan mampu mengendalikan jumlah radikal bebas berlebih agar tidak menyebabkan kerusakan sel dalam tubuh.
+
+Jika jumlah radikal bebas tidak terkendali, ada banyak sel tubuh yang rusak dan menyebabkan berbagai penyakit berbahaya muncul, contohnya adalah kanker. Oleh sebab itu, mendapatkan asupan antioksidan merupakan hal yang penting untuk dilakukan. Salah satu caranya adalah dengan mengonsumsi tomat.
+    </string>
+</resources>
