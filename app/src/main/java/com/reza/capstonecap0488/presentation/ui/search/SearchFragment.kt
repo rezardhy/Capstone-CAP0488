@@ -1,13 +1,19 @@
 package com.reza.capstonecap0488.presentation.ui.search
 
+import android.Manifest
 import android.app.Activity
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -49,15 +55,41 @@ class SearchFragment : Fragment() {
     }
 
     private fun openCamera(){
-        val i  = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
 
-        startActivityForResult(i, IMAGE_CAMERA)
+
+        if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA)
+            == PackageManager.PERMISSION_GRANTED){
+            val i  = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivityForResult(i, IMAGE_CAMERA)
+
+        }
+        else{
+            ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.CAMERA),
+                CAMERA_REQ)
+        }
+
+    }
+
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == CAMERA_REQ){
+            if(grantResults.isNotEmpty()&& grantResults[0] ==  PackageManager.PERMISSION_GRANTED){
+                val i  = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+                startActivityForResult(i, IMAGE_CAMERA)
+            }
+        }
 
     }
 
     companion object{
         val IMAGE_REQUEST_CODE =100
-        val IMAGE_CAMERA = 111
+        val IMAGE_CAMERA = 0
+        val CAMERA_REQ = 2
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -67,7 +99,8 @@ class SearchFragment : Fragment() {
             moveActivity(uriFoto.toString())
         }
         else if (requestCode == IMAGE_CAMERA && resultCode == Activity.RESULT_OK){
-            //var bmp = data?.extras?.get("data") as Bitmap
+            var bmp = data?.extras?.get("data") as Bitmap
+            binding.imview.setImageBitmap(bmp)
         }
     }
 
