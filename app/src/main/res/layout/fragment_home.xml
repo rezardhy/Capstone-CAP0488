@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".presentation.ui.home.HomeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
@@ -16,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/layout_article">
+        tools:listitem="@layout/layout_recycleview">
 
     </androidx.recyclerview.widget.RecyclerView>
 

@@ -1,18 +1,14 @@
 package com.reza.capstonecap0488.presentation.ui.home
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 
-import com.reza.capstonecap0488.R
 import com.reza.capstonecap0488.data.ArticleDummy
 import com.reza.capstonecap0488.databinding.FragmentHomeBinding
-import com.reza.capstonecap0488.presentation.ui.article.ArticleActivity
 
 class HomeFragment : Fragment() {
 

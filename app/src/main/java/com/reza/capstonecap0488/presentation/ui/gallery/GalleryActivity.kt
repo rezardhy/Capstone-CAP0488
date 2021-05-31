@@ -8,6 +8,7 @@ import androidx.core.net.toUri
 import com.reza.capstonecap0488.R
 import com.reza.capstonecap0488.databinding.ActivityGalleryBinding
 import com.reza.capstonecap0488.presentation.ui.result.ResultActivity
+import com.reza.capstonecap0488.presentation.ui.suggestion.SuggestionActivity
 
 class GalleryActivity : AppCompatActivity() {
 
@@ -21,7 +22,7 @@ class GalleryActivity : AppCompatActivity() {
         binding.fotoGaleri.setImageURI(foto?.toUri())
 
         binding.buttonIdentifikasi.setOnClickListener {
-            val i = Intent(this,ResultActivity::class.java)
+            val i = Intent(this,SuggestionActivity::class.java)
             i.putExtra(ResultActivity.EXTRA,foto)
             startActivity(i)
             finish()

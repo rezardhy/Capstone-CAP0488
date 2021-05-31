@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.SuggestionActivity">
+    tools:context=".presentation.ui.suggestion.SuggestionActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil Teratas"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+
+        />
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_view"
+        android:id="@+id/iv_uri"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        tools:src="@drawable/dauntomat"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Hasil"
+        android:layout_marginBottom="20dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/iv_uri"
+        android:id="@+id/rv_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/layout_suggestion">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
