@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.home
+package com.reza.capstonecap0488.presentation.ui.homepage.home
 
 import android.os.Bundle
 import android.view.LayoutInflater

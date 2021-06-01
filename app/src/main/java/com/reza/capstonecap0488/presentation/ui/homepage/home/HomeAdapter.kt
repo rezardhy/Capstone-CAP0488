@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.home
+package com.reza.capstonecap0488.presentation.ui.homepage.home
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.reza.capstonecap0488.databinding.LayoutRecycleviewBinding
 import com.reza.capstonecap0488.domain.ArticleModel
-import com.reza.capstonecap0488.presentation.ui.article.ArticleActivity
+import com.reza.capstonecap0488.presentation.ui.homepage.article.ArticleActivity
 
 class HomeAdapter():RecyclerView.Adapter<HomeAdapter.ArticleViewHolder>() {
 

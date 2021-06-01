@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.home
+package com.reza.capstonecap0488.presentation.ui.homepage.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

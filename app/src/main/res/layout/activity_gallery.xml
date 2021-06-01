@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.gallery.GalleryActivity">
+    tools:context=".presentation.ui.searchpage.gallery.GalleryActivity">
     <ImageView
         android:id="@+id/foto_galeri"
         android:layout_width="250dp"

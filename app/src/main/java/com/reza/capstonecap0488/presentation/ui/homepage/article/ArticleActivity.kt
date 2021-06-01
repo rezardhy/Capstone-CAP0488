@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.article
+package com.reza.capstonecap0488.presentation.ui.homepage.article
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.result
+package com.reza.capstonecap0488.presentation.ui.searchpage.result
 
 import android.os.Bundle
 import android.util.Log

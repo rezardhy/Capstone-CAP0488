@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.suggestion.SuggestionActivity">
+    tools:context=".presentation.ui.searchpage.suggestion.SuggestionActivity">
 
     <TextView
         android:id="@+id/tv_view"

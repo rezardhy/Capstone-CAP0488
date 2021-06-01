@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.search
+package com.reza.capstonecap0488.presentation.ui.searchpage.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

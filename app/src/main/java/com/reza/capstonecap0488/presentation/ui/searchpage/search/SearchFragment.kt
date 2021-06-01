@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.search
+package com.reza.capstonecap0488.presentation.ui.searchpage.search
 
 import android.Manifest
 import android.app.Activity
@@ -18,7 +18,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.reza.capstonecap0488.databinding.FragmentSearchBinding
-import com.reza.capstonecap0488.presentation.ui.gallery.GalleryActivity
+import com.reza.capstonecap0488.presentation.ui.searchpage.gallery.GalleryActivity
 
 class SearchFragment : Fragment() {
 
@@ -105,7 +105,7 @@ class SearchFragment : Fragment() {
     }
 
     private fun moveActivity(uriFoto : String){
-        val i = Intent(activity,GalleryActivity::class.java)
+        val i = Intent(activity, GalleryActivity::class.java)
         i.putExtra(GalleryActivity.EXTRAFOTO,uriFoto)
         startActivity(i)
     }

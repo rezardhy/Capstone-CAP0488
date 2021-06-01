@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.gallery
+package com.reza.capstonecap0488.presentation.ui.searchpage.gallery
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import com.reza.capstonecap0488.R
 import com.reza.capstonecap0488.databinding.ActivityGalleryBinding
-import com.reza.capstonecap0488.presentation.ui.result.ResultActivity
-import com.reza.capstonecap0488.presentation.ui.suggestion.SuggestionActivity
+import com.reza.capstonecap0488.presentation.ui.searchpage.result.ResultActivity
+import com.reza.capstonecap0488.presentation.ui.searchpage.suggestion.SuggestionActivity
 
 class GalleryActivity : AppCompatActivity() {
 
@@ -22,7 +22,7 @@ class GalleryActivity : AppCompatActivity() {
         binding.fotoGaleri.setImageURI(foto?.toUri())
 
         binding.buttonIdentifikasi.setOnClickListener {
-            val i = Intent(this,SuggestionActivity::class.java)
+            val i = Intent(this, SuggestionActivity::class.java)
             i.putExtra(ResultActivity.EXTRA,foto)
             startActivity(i)
             finish()

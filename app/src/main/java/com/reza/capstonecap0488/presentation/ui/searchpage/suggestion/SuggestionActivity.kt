@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.suggestion
+package com.reza.capstonecap0488.presentation.ui.searchpage.suggestion
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

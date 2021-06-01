@@ -1,4 +1,4 @@
-package com.reza.capstonecap0488.presentation.ui.suggestion
+package com.reza.capstonecap0488.presentation.ui.searchpage.suggestion
 
 import android.content.Intent
 import android.util.Log
@@ -9,7 +9,7 @@ import com.bumptech.glide.Glide
 import com.reza.capstonecap0488.R
 import com.reza.capstonecap0488.databinding.LayoutSuggestionBinding
 import com.reza.capstonecap0488.domain.SuggestionModel
-import com.reza.capstonecap0488.presentation.ui.result.ResultActivity
+import com.reza.capstonecap0488.presentation.ui.searchpage.result.ResultActivity
 
 class SuggestionAdapter():RecyclerView.Adapter<SuggestionAdapter.SuggestionViewHolder>() {
 
