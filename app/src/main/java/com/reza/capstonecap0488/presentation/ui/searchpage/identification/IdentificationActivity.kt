@@ -20,6 +20,9 @@ class IdentificationActivity : AppCompatActivity() {
         Log.d("cekd",foto.toString())
         binding.foto.setImageURI(foto?.toUri())
 
+        val titleJenis = intent.getStringExtra("extrajenis").toString()
+        title = titleJenis
+
         binding.buttonIdentifikasi.setOnClickListener {
             val i = Intent(this, SuggestionActivity::class.java)
             i.putExtra(SuggestionActivity.EXTRA,foto)
@@ -30,6 +33,7 @@ class IdentificationActivity : AppCompatActivity() {
     }
 
     companion object{
-        val EXTRAFOTO = "extrafoto"
+        const val EXTRAFOTO = "extrafoto"
+        const val EXTRAJENIS = "extrajenis"
     }
 }

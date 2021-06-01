@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.reza.capstonecap0488.R
-import com.reza.capstonecap0488.databinding.LayoutSuggestionBinding
+import com.reza.capstonecap0488.databinding.LayoutRecycleviewSmallBinding
 import com.reza.capstonecap0488.domain.SuggestionModel
 import com.reza.capstonecap0488.presentation.ui.searchpage.result.ResultActivity
 
@@ -21,7 +21,7 @@ class SuggestionAdapter():RecyclerView.Adapter<SuggestionAdapter.SuggestionViewH
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): SuggestionViewHolder {
-        val binding = LayoutSuggestionBinding.inflate(LayoutInflater.from(viewGroup.context),viewGroup,false)
+        val binding = LayoutRecycleviewSmallBinding.inflate(LayoutInflater.from(viewGroup.context),viewGroup,false)
         return SuggestionViewHolder(binding)    }
 
     override fun onBindViewHolder(holder: SuggestionViewHolder, position: Int) {
@@ -31,7 +31,7 @@ class SuggestionAdapter():RecyclerView.Adapter<SuggestionAdapter.SuggestionViewH
 
     override fun getItemCount(): Int = mlist.size
 
-    inner class SuggestionViewHolder(private val binding: LayoutSuggestionBinding): RecyclerView.ViewHolder(binding.root){
+    inner class SuggestionViewHolder(private val binding: LayoutRecycleviewSmallBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(suggestion: SuggestionModel){
             binding.apply {
                 Log.d("cekadapter",suggestion.nama)

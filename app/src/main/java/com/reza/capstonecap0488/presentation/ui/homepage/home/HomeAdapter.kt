@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.reza.capstonecap0488.databinding.LayoutRecycleviewBinding
+import com.reza.capstonecap0488.databinding.LayoutRecycleviewBigBinding
 import com.reza.capstonecap0488.domain.ArticleModel
 import com.reza.capstonecap0488.presentation.ui.homepage.article.ArticleActivity
 
@@ -20,7 +20,7 @@ class HomeAdapter():RecyclerView.Adapter<HomeAdapter.ArticleViewHolder>() {
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ArticleViewHolder {
-        val binding =LayoutRecycleviewBinding.inflate(LayoutInflater.from(viewGroup.context),viewGroup,false)
+        val binding =LayoutRecycleviewBigBinding.inflate(LayoutInflater.from(viewGroup.context),viewGroup,false)
         return ArticleViewHolder(binding)
     }
 
@@ -31,7 +31,7 @@ class HomeAdapter():RecyclerView.Adapter<HomeAdapter.ArticleViewHolder>() {
 
     override fun getItemCount(): Int = mlist.size
 
-    inner class ArticleViewHolder(private val binding:LayoutRecycleviewBinding): RecyclerView.ViewHolder(binding.root){
+    inner class ArticleViewHolder(private val binding:LayoutRecycleviewBigBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(article: ArticleModel){
             binding.apply {
                 tvArticle.text = article.title

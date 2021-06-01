@@ -18,6 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CapstoneCAP0488">
+        <activity android:name=".presentation.ui.searchpage.image.ImageActivity"></activity>
         <activity android:name=".presentation.ui.searchpage.identification.IdentificationActivity" />
         <activity android:name=".presentation.ui.searchpage.suggestion.SuggestionActivity" />
         <activity android:name=".presentation.ui.homepage.article.ArticleActivity" />
