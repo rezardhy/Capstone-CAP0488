@@ -17,6 +17,12 @@
 
         />
 
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progres_Bar"/>
+
     <ImageView
         android:layout_centerHorizontal="true"
         android:layout_below="@id/tv_view"

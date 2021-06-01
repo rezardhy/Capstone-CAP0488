@@ -22,7 +22,7 @@ class IdentificationActivity : AppCompatActivity() {
 
         binding.buttonIdentifikasi.setOnClickListener {
             val i = Intent(this, SuggestionActivity::class.java)
-            i.putExtra(ResultActivity.EXTRA,foto)
+            i.putExtra(SuggestionActivity.EXTRA,foto)
             startActivity(i)
             finish()
         }

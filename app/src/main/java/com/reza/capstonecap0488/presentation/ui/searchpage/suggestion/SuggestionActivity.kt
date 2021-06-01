@@ -3,6 +3,7 @@ package com.reza.capstonecap0488.presentation.ui.searchpage.suggestion
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.core.net.toUri
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.firestore.FirebaseFirestore
@@ -60,6 +61,7 @@ class SuggestionActivity : AppCompatActivity() {
     }
 
     private fun showList(){
+        binding.progresBar.visibility = View.GONE
         with(binding.rvArticle){
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
