@@ -2,9 +2,11 @@ package com.reza.capstonecap0488.presentation.ui.searchpage.search
 
 import android.Manifest
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
+import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
@@ -18,7 +20,10 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.reza.capstonecap0488.databinding.FragmentSearchBinding
+import com.reza.capstonecap0488.presentation.ui.searchpage.camera.CameraActivity
 import com.reza.capstonecap0488.presentation.ui.searchpage.gallery.GalleryActivity
+import com.reza.capstonecap0488.presentation.ui.searchpage.identification.IdentificationActivity
+import java.io.ByteArrayOutputStream
 
 class SearchFragment : Fragment() {
 
@@ -96,17 +101,27 @@ class SearchFragment : Fragment() {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == IMAGE_REQUEST_CODE && resultCode == Activity.RESULT_OK){
             val uriFoto = data?.data
-            moveActivity(uriFoto.toString())
+            moveToIdentification(uriFoto.toString())
         }
         else if (requestCode == IMAGE_CAMERA && resultCode == Activity.RESULT_OK){
             var bmp = data?.extras?.get("data") as Bitmap
-            binding.imview.setImageBitmap(bmp)
+            val uri = getImageUriFromBitmap(requireContext(),bmp)
+            moveToIdentification(uri.toString())
         }
     }
 
-    private fun moveActivity(uriFoto : String){
-        val i = Intent(activity, GalleryActivity::class.java)
-        i.putExtra(GalleryActivity.EXTRAFOTO,uriFoto)
+
+    fun getImageUriFromBitmap(context: Context, bitmap: Bitmap): Uri {
+        val bytes = ByteArrayOutputStream()
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, bytes)
+        val path = MediaStore.Images.Media.insertImage(context.contentResolver, bitmap, "Title", null)
+        return Uri.parse(path.toString())
+    }
+
+    private fun moveToIdentification(uriFoto : String){
+        val i = Intent(activity, IdentificationActivity::class.java)
+        i.putExtra(IdentificationActivity.EXTRAFOTO,uriFoto)
         startActivity(i)
     }
+
 }

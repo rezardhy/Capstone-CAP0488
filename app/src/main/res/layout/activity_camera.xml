@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.searchpage.camera.CameraActivity">
+
+    <ImageView
+        android:id="@+id/foto_camera"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        tools:src="@drawable/dauntomat"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/foto"
+        android:layout_marginTop="100dp"
+        />
+    <Button
+        android:id="@+id/button_identifikasi"
+        android:background="@drawable/view_costum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/foto_camera"
+        android:layout_marginTop="100dp"
+        android:text="@string/identifikasi_gambar"
+        />
+
+
+</RelativeLayout>
