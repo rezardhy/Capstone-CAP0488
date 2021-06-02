@@ -21,12 +21,17 @@ class SuggestionActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySuggestionBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val hasil = intent.getStringExtra("hasil")
+        binding.tvHasil.text = hasil
         val img  = intent.getStringExtra("uri")
         binding.ivUri.setImageURI(img?.toUri())
-        cekFireStore()
+        binding.progresBar.visibility = View.GONE
+
+        //cekFireStore()
 
 
     }
+    /*
     private fun cekFireStore(){
         val docRef = db.collection("penyakit_tomat")
         docRef.get()
@@ -59,18 +64,20 @@ class SuggestionActivity : AppCompatActivity() {
 
 
     }
+*/
 
-    private fun showList(){
+    /*private fun showList(){
         binding.progresBar.visibility = View.GONE
         with(binding.rvArticle){
             layoutManager = LinearLayoutManager(context)
             setHasFixedSize(true)
             adapter = suggestionAdapter
         }
-    }
+    }*/
 
     companion object{
         const val EXTRA = "uri"
+        const val HASIL = "hasil"
     }
 
 }

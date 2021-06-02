@@ -44,13 +44,13 @@ class SearchFragment : Fragment() {
 
         binding.cvTomat.setOnClickListener{
             val i = Intent(activity,ImageActivity::class.java)
-            i.putExtra(ImageActivity.EXTRAJENIS,"Tomat")
+            i.putExtra(ImageActivity.EXTRAJENIS,"tomat")
             startActivity(i)
         }
 
         binding.cvTester.setOnClickListener{
             val i = Intent(activity,ImageActivity::class.java)
-            i.putExtra(ImageActivity.EXTRAJENIS,"mobile net")
+            i.putExtra(ImageActivity.EXTRAJENIS,"mobilenet")
             startActivity(i)
         }
 

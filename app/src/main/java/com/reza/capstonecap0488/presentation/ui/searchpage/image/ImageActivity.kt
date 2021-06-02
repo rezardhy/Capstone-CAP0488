@@ -22,6 +22,8 @@ class ImageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityImageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        getSupportActionBar()?.hide();
+
 
         binding.buttonGallery.setOnClickListener{
             takeFromGallery()
@@ -100,6 +102,7 @@ class ImageActivity : AppCompatActivity() {
         i.putExtra(IdentificationActivity.EXTRAFOTO,uriFoto)
         i.putExtra(IdentificationActivity.EXTRAJENIS,jenis)
         startActivity(i)
+        //finish()
     }
 
     companion object{

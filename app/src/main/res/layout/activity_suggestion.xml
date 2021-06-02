@@ -4,9 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.ui.searchpage.suggestion.SuggestionActivity">
+    tools:context=".presentation.ui.searchpage.suggestion.SuggestionActivity"
+    tools:ignore="ExtraText">
 
     <TextView
+        android:layout_centerHorizontal="true"
         android:id="@+id/tv_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,14 +38,19 @@
         android:layout_marginBottom="20dp"
         />
 
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
         android:layout_below="@id/iv_uri"
-        android:id="@+id/rv_article"
-        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_hasil"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:listitem="@layout/layout_recycleview_small">
+        tools:text="Jawaban"
+        android:layout_marginBottom="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
 
-    </androidx.recyclerview.widget.RecyclerView>
+        />
+
+
 
 </RelativeLayout>
