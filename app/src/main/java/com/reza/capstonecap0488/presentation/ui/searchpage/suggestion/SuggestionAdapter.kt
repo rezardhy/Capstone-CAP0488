@@ -22,7 +22,8 @@ class SuggestionAdapter():RecyclerView.Adapter<SuggestionAdapter.SuggestionViewH
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): SuggestionViewHolder {
         val binding = LayoutRecycleviewSmallBinding.inflate(LayoutInflater.from(viewGroup.context),viewGroup,false)
-        return SuggestionViewHolder(binding)    }
+        return SuggestionViewHolder(binding)
+    }
 
     override fun onBindViewHolder(holder: SuggestionViewHolder, position: Int) {
         val suggestion = mlist[position]
@@ -52,8 +53,6 @@ class SuggestionAdapter():RecyclerView.Adapter<SuggestionAdapter.SuggestionViewH
 
 
         }
-
-
     }
 
 }

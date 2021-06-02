@@ -17,6 +17,8 @@ import androidx.core.content.ContextCompat
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.reza.capstonecap0488.data.ArticleDummy
 import com.reza.capstonecap0488.databinding.FragmentSearchBinding
 import com.reza.capstonecap0488.presentation.ui.searchpage.identification.IdentificationActivity
 import com.reza.capstonecap0488.presentation.ui.searchpage.image.ImageActivity
@@ -26,6 +28,7 @@ class SearchFragment : Fragment() {
 
     private lateinit var searchViewModel: SearchViewModel
     private lateinit var binding: FragmentSearchBinding
+    private val searchAdapter = SearchAdapter()
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -42,20 +45,18 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         searchViewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
 
-        binding.cvTomat.setOnClickListener{
-            val i = Intent(activity,ImageActivity::class.java)
-            i.putExtra(ImageActivity.EXTRAJENIS,"tomat")
-            startActivity(i)
+        searchAdapter.setSearchPlant(ArticleDummy.genereatePlantType())
+        showList()
+
+
+    }
+
+    private fun showList(){
+        with(binding.rvArticle){
+            layoutManager = LinearLayoutManager(context)
+            setHasFixedSize(true)
+            adapter = searchAdapter
         }
-
-        binding.cvTester.setOnClickListener{
-            val i = Intent(activity,ImageActivity::class.java)
-            i.putExtra(ImageActivity.EXTRAJENIS,"mobilenet")
-            startActivity(i)
-        }
-
-
-
     }
 
 

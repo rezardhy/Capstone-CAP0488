@@ -50,7 +50,15 @@
         android:textColor="@color/black"
 
         />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/tv_hasil"
+        android:id="@+id/rv_article"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/layout_recycleview_small">
 
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>

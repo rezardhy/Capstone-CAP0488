@@ -2,6 +2,7 @@ package com.reza.capstonecap0488.data
 
 import com.reza.capstonecap0488.R
 import com.reza.capstonecap0488.domain.ArticleModel
+import com.reza.capstonecap0488.domain.PlantTypeModel
 
 object ArticleDummy {
 
@@ -91,6 +92,36 @@ object ArticleDummy {
         )
 
         return article
+
+    }
+
+    fun genereatePlantType():ArrayList<PlantTypeModel>{
+
+        var plantType = ArrayList<PlantTypeModel>()
+
+        plantType.add(PlantTypeModel(
+                "Apel",
+                R.drawable.apel
+        ))
+
+        plantType.add(PlantTypeModel(
+                "Jagung",
+                R.drawable.jagung
+        ))
+
+        plantType.add(PlantTypeModel(
+                "Tomat",
+                R.drawable.tomat2
+            )
+
+        )
+
+
+
+
+
+
+        return plantType
 
     }
 
