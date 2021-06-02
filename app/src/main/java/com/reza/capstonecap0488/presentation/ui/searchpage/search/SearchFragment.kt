@@ -42,11 +42,19 @@ class SearchFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         searchViewModel = ViewModelProvider(this).get(SearchViewModel::class.java)
 
-        binding.buttonGallery.setOnClickListener{
+        binding.cvTomat.setOnClickListener{
             val i = Intent(activity,ImageActivity::class.java)
             i.putExtra(ImageActivity.EXTRAJENIS,"Tomat")
             startActivity(i)
         }
+
+        binding.cvTester.setOnClickListener{
+            val i = Intent(activity,ImageActivity::class.java)
+            i.putExtra(ImageActivity.EXTRAJENIS,"mobile net")
+            startActivity(i)
+        }
+
+
 
     }
 
