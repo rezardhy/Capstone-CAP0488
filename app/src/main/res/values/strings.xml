@@ -23,4 +23,7 @@ Jika jumlah radikal bebas tidak terkendali, ada banyak sel tubuh yang rusak dan 
     </string>
     <string name="foto">foto</string>
     <string name="identifikasi_gambar">Identifikasi Gambar</string>
+    <string name="apel">Apel</string>
+    <string name="jagung">Jagung</string>
+    <string name="tomat">Tomat</string>
 </resources>
